@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  width: 90vw;
+  background-color: pink;
+  justify-content: center;
+  flex: 1;
+  margin: 0 30px;
+  justify-content: space-between;
+}
+
+.panel {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  flex: 0.5;
+  background-color: skyblue;
+  margin: 10px;
+  transition: flex 0.7s ease-in;
+  border-radius: 50px;
+}
+
+.active{
+  flex: 5;
+}
+
+.panel h4 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 24px;
+  color: aliceblue;
+  opacity: 0;
+}
+.active h4 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}

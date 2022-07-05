@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+.circle {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  transition: transform 0.5s linear;
+  /* transform: rotate(-70deg); */
+}
+
+.show_circle {
+  transform: rotate(-70deg);
+}
+
+.b_conatiner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #ff7979;
+  border-radius: 100px;
+}
+
+.circle button {
+  width: 48px;
+  height: 48px;
+  top: 60%;
+  border: 0;
+  background-color: #ff7979;
+}
+
+#menu_btn {
+  position: absolute;
+  left: 120px;
+}
+
+#fork_btn {
+  position: absolute;
+  left: 32px;
+}
+
+#fork_btn span {
+  display: block;
+  background-color: #ff7979;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(to top right,rgba(0,0,0,0)0%,rgba(0,0,0,0)calc(50% - 4px),rgba(235,235,235,1)50%,rgba(0,0,0,0)calc(50% + 4px),rgba(0,0,0,0)100%),
+  linear-gradient(to bottom right,rgba(0,0,0,0)0%,rgba(0,0,0,0)calc(50% - 4px),rgba(235,235,235,1)50%,rgba(0,0,0,0)calc(50% + 4px),rgba(0,0,0,0)100%);
+}
+
+#menu_btn i{
+  margin: 8px auto;
+  display: block;
+  height: 4px;
+  width: 32px;
+  background-color: rgba(235,235,235,1);
+}
+
+
+/* 正文开始 */
+.container {
+  min-height: 100vh;
+  padding: 50px;
+  width: 100%;
+  /* 左上角为轴 */
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  /* transform: rotate(-20deg); */
+  background-color: aliceblue;
+}
+
+.show_container {
+  transform: rotate(-20deg);
+}
+
+.content {
+  margin: 50px auto 0 auto;
+  width: 800px;
+  background-color: aliceblue;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content h2 {
+  margin: 15px 0;
+}
+
+.content h4 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.content p {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.menu {
+  position: fixed;
+
+  bottom: 40px;
+  z-index: 100;
+  left: -100px;
+}
+
+.menu ul li{
+  font-size: 24px;
+  color: aliceblue;
+  margin-top: 40px;
+  transition: transform 0.5s ease-in;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.active ul li:nth-child(1) {
+  transform: translateX(140%);
+}
+.active ul li:nth-child(2) {
+  transform: translateX(160%);
+}
+.active ul li:nth-child(3) {
+  transform: translateX(180%);
+}
+
