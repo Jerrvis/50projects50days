@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+}
+.container {
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  margin: 20px 0;
+}
+.container div {
+  margin: 20px 0 40px;
+  position: relative;
+  width: 300px;
+}
+.container div input {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 15px 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+.container div input:focus,
+.container div input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.container div input:focus + label span,
+.container div input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+.container div label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+.container div label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container button {
+  width: 100%;
+  font-size: 16px;
+  padding: 15px;
+  background-color: lightblue;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container p {
+  margin: 30px auto 20px;
+}
+.container p a {
+  color: royalblue;
+}

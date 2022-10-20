@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aquamarine;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body div {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.guide {
+  font-size: 36px;
+  width: 400px;
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: royalblue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 64px;
+  line-height: 200px;
+  box-shadow: 2px 4px 5px rgb(0 0 0 / 30%);
+  transition: transform 0.5s ease;
+}
+
+.show {
+  transform: translateX(0) !important;
+}
+
+.l {
+  transform: translateX(calc(-50vw - 200px));
+}
+
+.r {
+  transform: translateX(calc(50vw + 200px));
+}
